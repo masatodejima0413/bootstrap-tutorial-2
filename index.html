@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/fixed.css" />
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#navbarResponsive">
     <!--- Start Course Section -->
     <!-- <div id="course" class="offset">
 
@@ -22,66 +22,74 @@
 </div> -->
     <!--- End Course Section -->
 
-    <!-- navbar section -->
+    <div id="home">
+      <!-- navbar section -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-      <a class="navbar-brand" href="#">
-        <img src="./img/nuno.png" />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbar_tutorial"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">
+          <img src="./img/nuno.png" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbar_tutorial">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">COURSE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">FEATURES</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">RESOURCES</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">CLIENTS</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">CONTACT</a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#course">COURSE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fetures">FEATURES</a>
+            </li>
+            <li class="nav-item">
+              <a href="#resources" class="nav-link">RESOURCES</a>
+            </li>
+            <li class="nav-item">
+              <a href="#clients" class="nav-link">CLIENTS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- landingpage section -->
+
+      <div class="landing">
+        <div class="home-wrap">
+          <div class="home-inner"></div>
+        </div>
       </div>
-    </nav>
 
-    <!-- top-image section -->
-
-    <div class="container-fluid text-center my-4">
-      <h2>WELCOME TO NUNO</h2>
-      <h4>UDEMY BOOTSTRAP 4 COURSE</h4>
-      <div>
-        <a href="#" class="btn btn-outline-light">GET STARTED</a>
+      <div class="caption text-center">
+        <h1>WELCOME TO NUNO</h1>
+        <h3>UDEMY BOOTSTRAP 4 COURSE</h3>
+        <div>
+          <a href="#course" class="btn btn-outline-light btn-lg">GET STARTED</a>
+        </div>
       </div>
     </div>
 
-    <!-- jumbotron section -->
-    <div class="jumbotron jumbotron-fluid bg-white">
-      <div class="row text-center">
-        <h1 class="col-12">Nuno Theme Advanced Bootstrap Course</h1>
-        <p class="lead col-12">
+    <!-- course section -->
+    <div id="course" class="offset">
+      <div class="col-12 narrow text-center">
+        <h1>Nuno Theme Advanced Bootstrap Course</h1>
+        <p class="lead">
           Learn Bootstrap by creating an advanced Bootstrap 4 Responsive Website
           Template form scratch, with no steps skipped!
         </p>
-        <div class="col-12">
+        <div>
           <a href="#"
-            ><button class="btn btn-lg btn-success">
+            ><button class="btn btn-lg btn-secondary">
               BOOTSTRAP COURSE
             </button></a
           >
@@ -89,126 +97,179 @@
       </div>
     </div>
 
-    <!-- three colums section -->
+    <!-- fetures section -->
 
-    <div class="container-fluid bg-light">
-      <div class="row text-center">
-        <div class="col-12">
-          <h1>FEATURES</h1>
-          <br />
-        </div>
-        <div class="col-sm-12 col-md-4">
-          <i class="fab fa-facebook"></i>
-          <h3>CUSTOM ANIMATION</h3>
-          <p>
-            Animate.css and Waypoints. js allow for smooth Animation scrolling
-            down the site.
-          </p>
-        </div>
-        <div class="col-sm-12 col-md-4">
-          <i class="fab fa-facebook"></i>
-          <h3>CUSTOM ANIMATION</h3>
-          <p>
-            Animate.css and Waypoints. js allow for smooth Animation scrolling
-            down the site.
-          </p>
-        </div>
-        <div class="col-sm-12 col-md-4">
-          <i class="fab fa-facebook"></i>
-          <h3>CUSTOM ANIMATION</h3>
-          <p>
-            Animate.css and Waypoints. js allow for smooth Animation scrolling
-            down the site.
-          </p>
+    <div id="fetures" class="offset">
+      <div class="jumbotron">
+        <div class="narrow text-center">
+          <div class="col-12">
+            <h3 class="heading">FEATURES</h3>
+            <div class="heading-underline"></div>
+          </div>
+
+          <div class="row text-center">
+            <div class="col-sm-12 col-md-4">
+              <div class="feature">
+                <i class="fas fa-play-circle fa-4x" data-fa-transform="shrink-3 up-5"></i>
+                <h3>Custom Animation</h3>
+                <p>
+                  Animate.css and Waypoints. js allow for smooth Animation
+                  scrolling down the site.
+                </p>
+			  </div>
+			  
+		  </div>
+		  <div class="col-sm-12 col-md-4">
+				<div class="feature">
+				  <i class="fas fa-sliders-h fa-4x" data-fa-transform="shrink-4.5 up-4.5"></i>
+				  <h3>Custom Animation</h3>
+				  <p>
+					Animate.css and Waypoints. js allow for smooth Animation
+					scrolling down the site.
+				  </p>
+				</div>
+				
+			</div>
+			<div class="col-sm-12 col-md-4">
+					<div class="feature">
+					  <i class="fab fa-wpforms fa-4x" data-fa-transform="shrink-4 up-5"></i>
+					  <h3>Custom Animation</h3>
+					  <p>
+						Animate.css and Waypoints. js allow for smooth Animation
+						scrolling down the site.
+					  </p>
+					</div>
+					
+				</div>
         </div>
       </div>
     </div>
 
-    <!-- three colums section2 -->
+	<!-- resources section2 -->
+	
 
-    <div class="container-fluid bg-secondary">
-      <div class="row text-center">
-        <div class="col-12">
-          <h1>BUILT WITH CARE</h1>
-          <br />
-        </div>
-        <div class="col-sm-12 col-md-4">
-          <h3>CUSTOM ANIMATION</h3>
-          <i class="fab fa-facebook"></i>
-          <p>
-            Built with the latest,HTML 5
-          </p>
-        </div>
-        <div class="col-sm-12 col-md-4">
-          <h3>CUSTOM ANIMATION</h3>
-          <i class="fab fa-facebook"></i>
-          <p>
-            Built with the latest,HTML 5
-          </p>
-        </div>
-        <div class="col-sm-12 col-md-4">
-          <h3>CUSTOM ANIMATION</h3>
-          <i class="fab fa-facebook"></i>
-          <p>
-            Animate.css and Waypoints. js allow for smooth Animation scrolling
-            down the site.
-          </p>
+
+    <div id="resources" class=" offset">
+
+		<div class="fixed-background">
+			<div class="row dark text-center">
+				<div class="col-12">
+					<h3 class="heading">Built With Case</h3>
+					<div class="heading-nuderline"></div>
+				</div>
+				<div class="col-md-4">
+					<h3>HTML5</h3>
+					<div class="feature">
+					<i class="fa fa-code fa-3x"></i>
+					<p class="lead">Built with the latest,HTML 5
+					</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+						<h3>HTML5</h3>
+						<div class="feature">
+						<i class="fa fa-bold fa-3x"></i>
+						<p class="lead">Built with the latest,HTML 5
+						</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+            <h3>HTML5</h3>
+            <div class="feature">
+            <i class="fab fa-css3 fa-3x"></i>
+            <p class="lead">Built with the latest,HTML 5
+            </p>
+            </div>
+          </div>
+			</div>
+				<div class="fixed-wrap">
+					<div class="fixed"></div>
+			</div>
+		</div>
+    <!-- clients section -->
+
+    <div id="clients" class="offset">
+      <div class="jumbotron">
+          <div class="col-12 text-center">
+              <h3 class="heading">Clients</h3>
+              <div class="heading-nuderline"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 clients">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="img/client1.png" alt="">
+              </div>
+              <div class="col-md-8">
+                <blockquote>
+
+                  <i class="fas fa-quote-left"></i>
+                  I see Nuno duooiet as more of a paertner to mt xompant than a
+                    Resources.I vabock up the phobe and talk to anyone at any time and
+                    thw way that they interact with us as a busibess makes it really
+                    simple.
+                    <hr class="clients-hr">
+                    <cite>&#8212; Ericsdifjsaldkfja;slfjs;lkfa</cite> 
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 clients">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="img/client2.png" alt="">
+                </div>
+                <div class="col-md-8">
+                  <blockquote>
+  
+                    <i class="fas fa-quote-left"></i>
+                    I see Nuno duooiet as more of a paertner to mt xompant than a
+                      Resources.I vabock up the phobe and talk to anyone at any time and
+                      thw way that they interact with us as a busibess makes it really
+                      simple.
+                      <hr class="clients-hr">
+                      <cite>&#8212; Ericsdifjsaldkfja;slfjs;lkfa</cite> 
+                  </blockquote>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
-    </div>
 
-    <!-- two colums section -->
-
-    <div class="container-fluid bg-light">
-      <div class="row">
-        <div class="col-sm-12 col-md-6 row">
-          <img src="./img/client1.png" class="col-sm-12 col-md-4" />
-          <p class="col-sm-12 col-md-8">
-            I see Nuno duooiet as more of a paertner to mt xompant than a
-            Resources.I vabock up the phobe and talk to anyone at any time and
-            thw way that they interact with us as a busibess makes it really
-            simple.
-          </p>
-        </div>
-        <div class="col-sm-12 col-md-6 row">
-          <img src="./img/client1.png" class="col-sm-12 col-md-4" />
-          <p class="col-sm-12 col-md-8">
-            I see Nuno duooiet as more of a paertner to mt xompant than a
-            Resources.I vabock up the phobe and talk to anyone at any time and
-            thw way that they interact with us as a busibess makes it really
-            simple.
-          </p>
-        </div>
+      <div class="col-12 narrow text-center">
+        <p class="lead">want to learn more about developing bootstrap themes?</p>
+          <div>
+              <a href="#course" class="btn btn-secondary btn-md">GET STARTED</a>
+            </div>
       </div>
-    </div>
-
-    <!-- button section -->
-
-    <div class="container-fluid text-center">
-      <h2>||||||||||||||||||||||||||</h2>
-      <a href="#" class="btn btn-success">BOOTSTRAP COURSE</a>
     </div>
 
     <!-- footer secion -->
 
-    <footer>
-      <div class="container-fluid text-center bg-dark">
-        <img src="./img/nuno.png" />
-        <p>
-          ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-        </p>
-        <p>contact</p>
-        <p>000-000-0000</p>
-        <p>email adress</p>
-        <div>
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-facebook"></i>
+    <div id="contact" class="offset">
+
+      <footer>
+        <div class="row justify-content-center">
+          <div class="col-md-5 text-center">
+            <img src="./img/nuno.png" />
+            <p>
+              ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+            </p>
+            <strong>contact INfo</strong>
+            <p>contact</p>
+            <p>000-000-0000</p>
+            <p>email adress</p>
+            <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+
+          <hr class="socket" />
+          &copy;nonotheme.
         </div>
-        <hr />
-        <h5>&copy;w3newbie.com</h5>
-      </div>
-    </footer>
+      </footer>
+    </div>
+
 
     <!--- Script Source Files -->
     <script src="js/jquery-3.3.1.min.js"></script>
